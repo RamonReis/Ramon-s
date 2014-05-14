@@ -1,0 +1,2 @@
+Problema com Impressão de caracteres com acento na tela.
+Valores escritos com apenas um dígito (ex: 02 - 2)
