@@ -1,0 +1,11 @@
+build
+target
+db
+log
+.metadata
+.settings/*
+.project
+.classpath
+app.log
+/bin/
+/props-files/
