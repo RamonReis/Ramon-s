@@ -1,0 +1,23 @@
+pre condition: professor ja esta logado
+
+Operações de Sistema:
+1- Solicitar Registro de Habilitações do Professor corrente e disciplinas não habilitadas (camada de serviço);
+2- Atualizar as Habilitações do professor corrente no sistema;
+3- Confirmar alterações e encerrar caso de uso.
+
+
+List<List<Disciplinas>> solicitarRegistroHabilitacoesDoProfessorNoCurso(Professor Prof, Curso curso);
+
+Boolean atualizarHabilitacoesProfessor(List<Disciplinas> novaListaHabilitacoesProfessor, Professor prof, Curso curso);
+
+Boolean confirmarEEncerrarRegistro(List<Disciplinas> novaListaHabilitacoesProfessor, Professor prof, Curso curso);
+
+RegistrarHabilitacoesProfessorControlador
+RegistrarHabilitacoesService
+DisciplinaRepositorio
+
+Classes a serem criadas:
+RegistrarHabilitacoesProfessorService
+RegistrarHabilitacoesProfessorController
+HabilitacoesRepositorio - Para manusear a relação que estará encarregada de manter as informações acerca das habilitações de um professor
+Habilitacoes - Tabela proveniente da relação entre Professor e Disciplina
