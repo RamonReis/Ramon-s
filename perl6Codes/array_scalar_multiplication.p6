@@ -1,6 +1,4 @@
-sub MAIN() { 
-    #my $p = Pessoa.new;
-    #$p.print_p_name;
+sub MAIN() {
     my @v1 = <4 3 2 1>;
     my @v2 = <4 3 2 1>;
 
