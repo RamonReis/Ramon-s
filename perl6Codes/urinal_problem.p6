@@ -22,7 +22,6 @@ sub MAIN() {
             @positions.append($i);
         }
         $aux = False;
-        say $i;
     }
     say $counter;
     say @positions;
