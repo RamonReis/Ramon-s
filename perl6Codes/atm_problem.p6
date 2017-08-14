@@ -5,7 +5,7 @@ sub MAIN() {
     my $withdraw = 2255;
     my $moneyBag = @bills.BagHash;
 
-    if $withdraw %5 != 0 {say "Pas possible!"; return;}
+    if $withdraw %% 5 {say "Pas possible!"; return;}
     for @bills -> Int $bill {
         until $withdraw < $bill {
             say $bill;
