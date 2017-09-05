@@ -66,10 +66,9 @@ int main(){
     }
 
     int pid = 0;
+    //Abre o socket para atender a clientes
+	sAtivo = accept(sPassivo,&enderConex1,&tamEnderConex);
     while(1){
-        //Abre o socket para atender a clientes
-        sAtivo = accept(sPassivo,&enderConex1,&tamEnderConex);
-
         printf("[Servidor] (Vai esperar pedido de servico...)\n");
         
         if(sAtivo<0){
@@ -89,6 +88,7 @@ int main(){
         }
         else if(pid >= 0) {//Sucesso
             close(sAtivo);
+            sAtivo = accept(sPassivo,&enderConex1,&tamEnderConex);
             continue;
         }
 
