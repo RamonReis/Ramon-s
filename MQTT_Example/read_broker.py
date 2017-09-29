@@ -9,7 +9,7 @@ broker = "127.0.0.1"
 MQTT_Topic = "Ramonrrs/feeds/test"
 broker = "io.adafruit.com"
 username='Ramonrrs'
-password_ada = 'b0e37e353dc246bc86468d62c5da6d24'
+password_ada = ''
 port = 1883
 #ser = serial.Serial('/dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85235353037351715170-if00',9600)
 

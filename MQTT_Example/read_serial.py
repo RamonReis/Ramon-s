@@ -9,10 +9,7 @@ def on_connect(self, client, userdata, rc):
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
     client.subscribe(MQTT_Topic)
-# The callback for when a PUBLISH message is received from the server.
-def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.payload))
-# The callback for when a PUBLISH message is received from the server.
+
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
 
@@ -29,7 +26,7 @@ MQTT_Topic = "Ramonrrs/feeds/test" # "topic/digital_input" #test/topic/digital_i
 broker = "127.0.0.1"
 broker = "io.adafruit.com"
 username='Ramonrrs'
-password_ada = 'b0e37e353dc246bc86468d62c5da6d24'
+password_ada = ''
 
 port = 1883
 try:
